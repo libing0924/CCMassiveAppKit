@@ -7,7 +7,7 @@
 //
 
 #import "CCAFNetworkingService.h"
-#import "AFNetworking/AFNetworking/AFNetworking.h"
+#import <AFNetworking/AFNetworking.h>
 
 @interface CCAFNetworkingService ()
 

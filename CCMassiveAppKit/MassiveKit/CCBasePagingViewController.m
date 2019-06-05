@@ -7,7 +7,7 @@
 //
 
 #import "CCBasePagingViewController.h"
-#import "MJRefresh/MJRefresh/MJRefresh.h"
+#import <MJRefresh/MJRefresh.h>
 
 @interface CCBasePagingViewController ()
 
