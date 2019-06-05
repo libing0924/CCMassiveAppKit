@@ -1,0 +1,16 @@
+PODS:
+  - CCSimpleAppKit (0.1.0)
+
+DEPENDENCIES:
+  - CCSimpleAppKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CCSimpleAppKit
+
+SPEC CHECKSUMS:
+  CCSimpleAppKit: 4c23ba4c9b04b49d3fab488da497d20b97fade89
+
+PODFILE CHECKSUM: 2c0c639331d8a42aeaa740abece1a42ea6bd9673
+
+COCOAPODS: 1.6.1
