@@ -1,11 +1,12 @@
-<p align="center" >
-  <img src="https://raw.githubusercontent.com/libing0924/CCMassiveAppKit/master/CCMassiveAppKit/Resources/images/massivelogo.png" alt="AFNetworking" title="AFNetworking">
+<p align="center">
+  <img style="width:100px" src="https://raw.githubusercontent.com/libing0924/CCMassiveAppKit/master/CCMassiveAppKit/Resources/images/massivelogo.png" alt="CCMassiveAppKit" title="CCMassiveAppKit">
+  <p align="center" style="font-family : 微软雅黑;font-size : 1.5em">CCMassiveAppKit</p>
 </p>
 
 
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/CCMassiveAppKit.svg)](https://img.shields.io/cocoapods/v/AFNetworking.svg)
 
-CCMassiveAppKit是面向iOS开发新手的一个快速开发包，可以从0开始快速搭建一个通用依赖库的工程，底层架构是基于[CCSimpleAppKit](https://github.com/libing0924/CCMassiveAppKit)，为了快速的开始一个项目的开发，在导入CCMassiveAppKit的时候注意一定要引入相应的依赖库。
+CCMassiveAppKit是面向iOS开发新手的一个快速开发包，可以从0开始快速搭建一个通用依赖库的工程，是基于[CCSimpleAppKit](https://github.com/libing0924/CCMassiveAppKit)的插件化扩展，为了提高新手的开发效率，CCMassiveAppKit依赖一些常用的第三方库。
 
 ## Features
 
