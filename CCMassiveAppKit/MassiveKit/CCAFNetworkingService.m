@@ -13,6 +13,8 @@
 
 @property (nonatomic, strong) AFHTTPSessionManager *httpManager;
 
+@property (nonatomic, strong) NSString *baseUrl;
+
 @end
 
 @implementation CCAFNetworkingService
@@ -29,12 +31,8 @@
     return manager;
 }
 
-- (void)requestGET:(NSString *)urlStr
-        parameters:(NSDictionary *)params
-           headers:(NSDictionary *)headers
-           success:(cc_net_success_block)success
-           failure:(cc_net_failure_block)failure {
-        
+- (void)requestGET:(NSString *)urlStr parameters:(NSDictionary *)params headers:(NSDictionary *)headers success:(cc_net_success_block)success failure:(cc_net_failure_block)failure {
+    
     for (NSString *key in headers.allKeys) {
         
         [self.httpManager.requestSerializer setValue:headers[key] forHTTPHeaderField:key];
@@ -51,14 +49,10 @@
     }];
 }
 
-- (void)requestPOST:(NSString *)urlStr
-         parameters:(NSDictionary *)params
-            headers:(NSDictionary *)headers
-            success:(cc_net_success_block)success
-            failure:(cc_net_failure_block)failure {
+- (void)requestPOST:(NSString *)urlStr parameters:(NSDictionary *)params headers:(NSDictionary *)headers success:(cc_net_success_block)success failure:(cc_net_failure_block)failure {
     
     for (NSString *key in headers.allKeys) {
-            
+        
         [self.httpManager.requestSerializer setValue:headers[key] forHTTPHeaderField:key];
     }
     
@@ -71,6 +65,44 @@
         
         !failure ? : failure(task, error);
     }];
+}
+
+- (void)uploadImageWithOperations:(NSDictionary *)operations ImageArray:(NSArray *)imageArray UrlString:(NSString *)urlString progress:(cc_net_progress_block)progress success:(cc_net_success_block)success failure:(cc_net_failure_block)failure {
+    
+}
+
+- (void)configBaseUrlString:(NSString *)urlString {
+    
+    _baseUrl = urlString;
+}
+
+#pragma mark - getter
+- (AFHTTPSessionManager *)httpManager {
+    
+    if (!_httpManager) {
+        
+        _httpManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:self.baseUrl]];
+        _httpManager.requestSerializer = [AFJSONRequestSerializer serializer];
+        _httpManager.requestSerializer.timeoutInterval = 20.f;
+        _httpManager.requestSerializer.cachePolicy = NSURLRequestReloadRevalidatingCacheData;
+        //        [_httpManager setSecurityPolicy:[self _customSecurityPolicy]];
+        AFJSONResponseSerializer *response = [AFJSONResponseSerializer serializer];
+        //        NSMutableIndexSet *set = [[NSMutableIndexSet alloc] initWithIndex:400];
+        //        [set addIndexesInRange:NSMakeRange(400, 199)];
+        //        [set addIndexesInRange:NSMakeRange(200, 100)];
+        //        response.acceptableStatusCodes = set;
+        response.removesKeysWithNullValues = YES;
+        _httpManager.responseSerializer = response;
+        NSSet *types = [NSSet setWithObjects:@"application/json",
+                        @"text/plain",
+                        @"text/html",
+                        @"text/json",
+                        @"text/javascript",
+                        @"text/xml",
+                        nil];
+        _httpManager.responseSerializer.acceptableContentTypes = types;
+    }
+    return _httpManager;
 }
 
 @end

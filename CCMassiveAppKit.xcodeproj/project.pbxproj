@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		89D660B0F25FAC4154957CBD /* libPods-CCMassiveAppKitUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2141202854B3B4C3F50CEB /* libPods-CCMassiveAppKitUITests.a */; };
 		8A2421DE46114EBC72CF5CB5 /* libPods-CCMassiveAppKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63E9F7A088774702135671 /* libPods-CCMassiveAppKitTests.a */; };
-		D15C5794E76B56B494F213CC /* libPods-CCMassiveAppKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7CBF44CFA961A9573A3A33 /* libPods-CCMassiveAppKit.a */; };
 		D69A301822A763A400F85320 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A301722A763A400F85320 /* AppDelegate.m */; };
 		D69A301B22A763A400F85320 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A301A22A763A400F85320 /* ViewController.m */; };
 		D69A301E22A763A400F85320 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D69A301C22A763A400F85320 /* Main.storyboard */; };
@@ -21,6 +20,7 @@
 		D69A305022A763C400F85320 /* CCAFNetworkingService.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A304D22A763C400F85320 /* CCAFNetworkingService.m */; };
 		D69A305122A763C400F85320 /* CCBasePagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A304E22A763C400F85320 /* CCBasePagingViewController.m */; };
 		D69A305222A763C400F85320 /* CCMassiveKitModule.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A304F22A763C400F85320 /* CCMassiveKitModule.m */; };
+		D69A305522A76AC100F85320 /* libPods-CCMassiveAppKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D69A305422A76AC100F85320 /* libPods-CCMassiveAppKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,11 +65,11 @@
 		D69A303C22A763A600F85320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D69A304922A763C400F85320 /* CCAFNetworkingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAFNetworkingService.h; sourceTree = "<group>"; };
 		D69A304A22A763C400F85320 /* CCBasePagingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBasePagingViewController.h; sourceTree = "<group>"; };
-		D69A304B22A763C400F85320 /* CCNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNetworkingManager.h; sourceTree = "<group>"; };
 		D69A304C22A763C400F85320 /* CCMassiveKitModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMassiveKitModule.h; sourceTree = "<group>"; };
 		D69A304D22A763C400F85320 /* CCAFNetworkingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAFNetworkingService.m; sourceTree = "<group>"; };
 		D69A304E22A763C400F85320 /* CCBasePagingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBasePagingViewController.m; sourceTree = "<group>"; };
 		D69A304F22A763C400F85320 /* CCMassiveKitModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMassiveKitModule.m; sourceTree = "<group>"; };
+		D69A305422A76AC100F85320 /* libPods-CCMassiveAppKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-CCMassiveAppKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7CBF44CFA961A9573A3A33 /* libPods-CCMassiveAppKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CCMassiveAppKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB60E2A1DBBA132BB4B7E7C8 /* Pods-CCMassiveAppKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCMassiveAppKit.release.xcconfig"; path = "Target Support Files/Pods-CCMassiveAppKit/Pods-CCMassiveAppKit.release.xcconfig"; sourceTree = "<group>"; };
 		FD63E9F7A088774702135671 /* libPods-CCMassiveAppKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CCMassiveAppKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D15C5794E76B56B494F213CC /* libPods-CCMassiveAppKit.a in Frameworks */,
+				D69A305522A76AC100F85320 /* libPods-CCMassiveAppKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +119,7 @@
 		6F9A48526D7303BAC1F0424C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D69A305422A76AC100F85320 /* libPods-CCMassiveAppKit.a */,
 				DD7CBF44CFA961A9573A3A33 /* libPods-CCMassiveAppKit.a */,
 				FD63E9F7A088774702135671 /* libPods-CCMassiveAppKitTests.a */,
 				9B2141202854B3B4C3F50CEB /* libPods-CCMassiveAppKitUITests.a */,
@@ -190,9 +191,8 @@
 				D69A304F22A763C400F85320 /* CCMassiveKitModule.m */,
 				D69A304A22A763C400F85320 /* CCBasePagingViewController.h */,
 				D69A304E22A763C400F85320 /* CCBasePagingViewController.m */,
-				D69A304B22A763C400F85320 /* CCNetworkingManager.h */,
-				D69A304D22A763C400F85320 /* CCAFNetworkingService.m */,
 				D69A304922A763C400F85320 /* CCAFNetworkingService.h */,
+				D69A304D22A763C400F85320 /* CCAFNetworkingService.m */,
 			);
 			path = MassiveKit;
 			sourceTree = "<group>";
@@ -208,7 +208,7 @@
 				D69A300F22A763A400F85320 /* Sources */,
 				D69A301022A763A400F85320 /* Frameworks */,
 				D69A301122A763A400F85320 /* Resources */,
-				A57BACD1F69CDFAF2D92D786 /* [CP] Copy Pods Resources */,
+				B8FBCB3EB29077339952CC91 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -371,7 +371,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A57BACD1F69CDFAF2D92D786 /* [CP] Copy Pods Resources */ = {
+		B8FBCB3EB29077339952CC91 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -599,15 +599,18 @@
 			baseConfigurationReference = 0D0C4B0844FBC40473FB8D5E /* Pods-CCMassiveAppKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CCMassiveAppKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kit.massiveapp.cc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -616,15 +619,18 @@
 			baseConfigurationReference = FB60E2A1DBBA132BB4B7E7C8 /* Pods-CCMassiveAppKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CCMassiveAppKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kit.massiveapp.cc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

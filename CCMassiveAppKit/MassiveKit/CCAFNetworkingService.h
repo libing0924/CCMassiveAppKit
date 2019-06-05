@@ -14,8 +14,9 @@
 
 @interface CCAFNetworkingService : NSObject <CCNetworkService>
 
-
 + (CCAFNetworkingService *)sharedInstance;
+
+- (void)configBaseUrlString:(NSString *)urlString;
 
 - (void)requestGET:(NSString *)urlStr parameters:(NSDictionary *)params headers:(NSDictionary *)headers success:(cc_net_success_block)success failure:(cc_net_failure_block)failure;
 
