@@ -14,12 +14,12 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - CCSimpleAppKit (0.1.0)
+  - CCSimpleAppKit (1.0.0)
   - MJRefresh (3.2.0)
 
 DEPENDENCIES:
   - AFNetworking
-  - CCSimpleAppKit
+  - CCSimpleAppKit (~> 1.0.0)
   - MJRefresh
 
 SPEC REPOS:
@@ -30,9 +30,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  CCSimpleAppKit: 4c23ba4c9b04b49d3fab488da497d20b97fade89
+  CCSimpleAppKit: c59c329410da53a4e2c1a67331f15610a5996796
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
 
-PODFILE CHECKSUM: b984e76d31434e54398ac91ee32bcf55755a1454
+PODFILE CHECKSUM: 14674cc77704e09c409500c508359a30fbf13909
 
 COCOAPODS: 1.6.1

@@ -6,10 +6,8 @@
 //  Copyright © 2019 CC. All rights reserved.
 //
 
-#import <CCBaseListViewController.h>
+#import "CCBaseListViewController.h"
 #import "CCPagingRequest.h"
-
-
 
 @interface CCBasePagingViewController : CCBaseListViewController <CCPagingRawDataHandler>
 

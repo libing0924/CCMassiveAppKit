@@ -22,4 +22,11 @@
     [CCNetworkRequestFactory registerGlobeRequestService:[CCAFNetworkingService sharedInstance]];
 }
 
++ (void)configNetworkGlobeHandler {
+    
+}
+
++ (void)configMassiveKit {
+    
+}
 @end

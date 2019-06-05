@@ -21,6 +21,8 @@
 		D69A305122A763C400F85320 /* CCBasePagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A304E22A763C400F85320 /* CCBasePagingViewController.m */; };
 		D69A305222A763C400F85320 /* CCMassiveKitModule.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A304F22A763C400F85320 /* CCMassiveKitModule.m */; };
 		D69A305522A76AC100F85320 /* libPods-CCMassiveAppKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D69A305422A76AC100F85320 /* libPods-CCMassiveAppKit.a */; };
+		D69A305A22A7716700F85320 /* CCBaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A305622A7716500F85320 /* CCBaseListViewController.m */; };
+		D69A305B22A7716700F85320 /* CCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A305922A7716700F85320 /* CCBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,10 @@
 		D69A304E22A763C400F85320 /* CCBasePagingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBasePagingViewController.m; sourceTree = "<group>"; };
 		D69A304F22A763C400F85320 /* CCMassiveKitModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMassiveKitModule.m; sourceTree = "<group>"; };
 		D69A305422A76AC100F85320 /* libPods-CCMassiveAppKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-CCMassiveAppKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D69A305622A7716500F85320 /* CCBaseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseListViewController.m; sourceTree = "<group>"; };
+		D69A305722A7716700F85320 /* CCBaseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseListViewController.h; sourceTree = "<group>"; };
+		D69A305822A7716700F85320 /* CCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseViewController.h; sourceTree = "<group>"; };
+		D69A305922A7716700F85320 /* CCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseViewController.m; sourceTree = "<group>"; };
 		DD7CBF44CFA961A9573A3A33 /* libPods-CCMassiveAppKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CCMassiveAppKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB60E2A1DBBA132BB4B7E7C8 /* Pods-CCMassiveAppKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCMassiveAppKit.release.xcconfig"; path = "Target Support Files/Pods-CCMassiveAppKit/Pods-CCMassiveAppKit.release.xcconfig"; sourceTree = "<group>"; };
 		FD63E9F7A088774702135671 /* libPods-CCMassiveAppKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CCMassiveAppKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,6 +193,10 @@
 		D69A304822A763C400F85320 /* MassiveKit */ = {
 			isa = PBXGroup;
 			children = (
+				D69A305722A7716700F85320 /* CCBaseListViewController.h */,
+				D69A305622A7716500F85320 /* CCBaseListViewController.m */,
+				D69A305822A7716700F85320 /* CCBaseViewController.h */,
+				D69A305922A7716700F85320 /* CCBaseViewController.m */,
 				D69A304C22A763C400F85320 /* CCMassiveKitModule.h */,
 				D69A304F22A763C400F85320 /* CCMassiveKitModule.m */,
 				D69A304A22A763C400F85320 /* CCBasePagingViewController.h */,
@@ -423,9 +433,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D69A305122A763C400F85320 /* CCBasePagingViewController.m in Sources */,
+				D69A305B22A7716700F85320 /* CCBaseViewController.m in Sources */,
 				D69A305222A763C400F85320 /* CCMassiveKitModule.m in Sources */,
 				D69A305022A763C400F85320 /* CCAFNetworkingService.m in Sources */,
 				D69A301B22A763A400F85320 /* ViewController.m in Sources */,
+				D69A305A22A7716700F85320 /* CCBaseListViewController.m in Sources */,
 				D69A302622A763A600F85320 /* main.m in Sources */,
 				D69A301822A763A400F85320 /* AppDelegate.m in Sources */,
 			);
