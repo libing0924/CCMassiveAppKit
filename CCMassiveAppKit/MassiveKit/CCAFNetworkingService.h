@@ -10,7 +10,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "CCNetworkService.h"
+#import <CCNetworkService.h>
 
 @interface CCAFNetworkingService : NSObject <CCNetworkService>
 

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CCConvenientRequest.h"
+#import <CCConvenientRequest.h>
 
 @interface CCBaseViewController : UIViewController
 
