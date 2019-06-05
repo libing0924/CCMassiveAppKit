@@ -7,7 +7,7 @@
 //
 
 #import "CCBaseListViewController.h"
-#import <CCPagingRequest.h>
+#import <CCSimpleAppKit/CCPagingRequest.h>
 
 @interface CCBasePagingViewController : CCBaseListViewController <CCPagingRawDataHandler>
 
