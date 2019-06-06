@@ -16,23 +16,30 @@ PODS:
     - AFNetworking/NSURLSession
   - CCSimpleAppKit (1.0.0)
   - MJRefresh (3.2.0)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking
-  - CCSimpleAppKit (~> 1.0.0)
+  - CCSimpleAppKit (from `../SimpleKit/`)
   - MJRefresh
+  - YYModel
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
-    - CCSimpleAppKit
     - MJRefresh
+    - YYModel
+
+EXTERNAL SOURCES:
+  CCSimpleAppKit:
+    :path: "../SimpleKit/"
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  CCSimpleAppKit: c59c329410da53a4e2c1a67331f15610a5996796
+  CCSimpleAppKit: 128c8b2c5f630ef640ef367f6c5c3c10f361c8a6
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 14674cc77704e09c409500c508359a30fbf13909
+PODFILE CHECKSUM: 13f6f2ca09cd6bc1919ecd1a2f5f9220a722a90e
 
 COCOAPODS: 1.6.1

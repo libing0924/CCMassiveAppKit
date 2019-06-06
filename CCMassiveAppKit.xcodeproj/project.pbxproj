@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		89D660B0F25FAC4154957CBD /* libPods-CCMassiveAppKitUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2141202854B3B4C3F50CEB /* libPods-CCMassiveAppKitUITests.a */; };
 		8A2421DE46114EBC72CF5CB5 /* libPods-CCMassiveAppKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63E9F7A088774702135671 /* libPods-CCMassiveAppKitTests.a */; };
+		D65D9BD922A8BC8A0033C19B /* CCSimpleRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D65D9BD822A8BC8A0033C19B /* CCSimpleRequest.m */; };
+		D65D9BDE22A8F7510033C19B /* CCRequestDefaultHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D65D9BDC22A8F7510033C19B /* CCRequestDefaultHandler.m */; };
+		D65D9BE222A8F9CE0033C19B /* CCPagingRequestDefaultHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D65D9BE122A8F9CE0033C19B /* CCPagingRequestDefaultHandler.m */; };
+		D65D9BED22A907FE0033C19B /* CCProjectBaseRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D65D9BEC22A907FE0033C19B /* CCProjectBaseRequestHandler.m */; };
+		D65D9BF022A908380033C19B /* CCTeamARequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D65D9BEF22A908380033C19B /* CCTeamARequestHandler.m */; };
+		D65D9BF322A908460033C19B /* CCTeamBRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D65D9BF222A908460033C19B /* CCTeamBRequestHandler.m */; };
+		D65D9BF722A90F9E0033C19B /* CCAPagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65D9BF622A90F9E0033C19B /* CCAPagingViewController.m */; };
 		D69A301822A763A400F85320 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A301722A763A400F85320 /* AppDelegate.m */; };
 		D69A301B22A763A400F85320 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A301A22A763A400F85320 /* ViewController.m */; };
 		D69A301E22A763A400F85320 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D69A301C22A763A400F85320 /* Main.storyboard */; };
@@ -18,11 +25,11 @@
 		D69A303022A763A600F85320 /* CCMassiveAppKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A302F22A763A600F85320 /* CCMassiveAppKitTests.m */; };
 		D69A303B22A763A600F85320 /* CCMassiveAppKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A303A22A763A600F85320 /* CCMassiveAppKitUITests.m */; };
 		D69A305022A763C400F85320 /* CCAFNetworkingService.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A304D22A763C400F85320 /* CCAFNetworkingService.m */; };
-		D69A305122A763C400F85320 /* CCBasePagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A304E22A763C400F85320 /* CCBasePagingViewController.m */; };
+		D69A305122A763C400F85320 /* CCMassivePagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A304E22A763C400F85320 /* CCMassivePagingViewController.m */; };
 		D69A305222A763C400F85320 /* CCMassiveKitModule.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A304F22A763C400F85320 /* CCMassiveKitModule.m */; };
 		D69A305522A76AC100F85320 /* libPods-CCMassiveAppKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D69A305422A76AC100F85320 /* libPods-CCMassiveAppKit.a */; };
-		D69A305A22A7716700F85320 /* CCBaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A305622A7716500F85320 /* CCBaseListViewController.m */; };
-		D69A305B22A7716700F85320 /* CCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A305922A7716700F85320 /* CCBaseViewController.m */; };
+		D69A305A22A7716700F85320 /* CCMassiveListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A305622A7716500F85320 /* CCMassiveListViewController.m */; };
+		D69A305B22A7716700F85320 /* CCMassiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A305922A7716700F85320 /* CCMassiveViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,21 @@
 		9B2141202854B3B4C3F50CEB /* libPods-CCMassiveAppKitUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CCMassiveAppKitUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9125125A3F273D8FEB4F0C /* Pods-CCMassiveAppKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCMassiveAppKitTests.debug.xcconfig"; path = "Target Support Files/Pods-CCMassiveAppKitTests/Pods-CCMassiveAppKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BA968D53058EC56E295CCF51 /* Pods-CCMassiveAppKitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCMassiveAppKitUITests.debug.xcconfig"; path = "Target Support Files/Pods-CCMassiveAppKitUITests/Pods-CCMassiveAppKitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D65D9BD722A8BC8A0033C19B /* CCSimpleRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCSimpleRequest.h; sourceTree = "<group>"; };
+		D65D9BD822A8BC8A0033C19B /* CCSimpleRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCSimpleRequest.m; sourceTree = "<group>"; };
+		D65D9BDC22A8F7510033C19B /* CCRequestDefaultHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRequestDefaultHandler.m; sourceTree = "<group>"; };
+		D65D9BDD22A8F7510033C19B /* CCRequestDefaultHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRequestDefaultHandler.h; sourceTree = "<group>"; };
+		D65D9BE022A8F9CE0033C19B /* CCPagingRequestDefaultHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCPagingRequestDefaultHandler.h; sourceTree = "<group>"; };
+		D65D9BE122A8F9CE0033C19B /* CCPagingRequestDefaultHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCPagingRequestDefaultHandler.m; sourceTree = "<group>"; };
+		D65D9BE322A901CD0033C19B /* CCJSONModelService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCJSONModelService.h; sourceTree = "<group>"; };
+		D65D9BEB22A907FE0033C19B /* CCProjectBaseRequestHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCProjectBaseRequestHandler.h; sourceTree = "<group>"; };
+		D65D9BEC22A907FE0033C19B /* CCProjectBaseRequestHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCProjectBaseRequestHandler.m; sourceTree = "<group>"; };
+		D65D9BEE22A908380033C19B /* CCTeamARequestHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCTeamARequestHandler.h; sourceTree = "<group>"; };
+		D65D9BEF22A908380033C19B /* CCTeamARequestHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCTeamARequestHandler.m; sourceTree = "<group>"; };
+		D65D9BF122A908460033C19B /* CCTeamBRequestHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCTeamBRequestHandler.h; sourceTree = "<group>"; };
+		D65D9BF222A908460033C19B /* CCTeamBRequestHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCTeamBRequestHandler.m; sourceTree = "<group>"; };
+		D65D9BF522A90F9E0033C19B /* CCAPagingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCAPagingViewController.h; sourceTree = "<group>"; };
+		D65D9BF622A90F9E0033C19B /* CCAPagingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCAPagingViewController.m; sourceTree = "<group>"; };
 		D69A301322A763A400F85320 /* CCMassiveAppKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCMassiveAppKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D69A301622A763A400F85320 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D69A301722A763A400F85320 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,16 +88,16 @@
 		D69A303A22A763A600F85320 /* CCMassiveAppKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCMassiveAppKitUITests.m; sourceTree = "<group>"; };
 		D69A303C22A763A600F85320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D69A304922A763C400F85320 /* CCAFNetworkingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAFNetworkingService.h; sourceTree = "<group>"; };
-		D69A304A22A763C400F85320 /* CCBasePagingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBasePagingViewController.h; sourceTree = "<group>"; };
+		D69A304A22A763C400F85320 /* CCMassivePagingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMassivePagingViewController.h; sourceTree = "<group>"; };
 		D69A304C22A763C400F85320 /* CCMassiveKitModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMassiveKitModule.h; sourceTree = "<group>"; };
 		D69A304D22A763C400F85320 /* CCAFNetworkingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAFNetworkingService.m; sourceTree = "<group>"; };
-		D69A304E22A763C400F85320 /* CCBasePagingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBasePagingViewController.m; sourceTree = "<group>"; };
+		D69A304E22A763C400F85320 /* CCMassivePagingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMassivePagingViewController.m; sourceTree = "<group>"; };
 		D69A304F22A763C400F85320 /* CCMassiveKitModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMassiveKitModule.m; sourceTree = "<group>"; };
 		D69A305422A76AC100F85320 /* libPods-CCMassiveAppKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-CCMassiveAppKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D69A305622A7716500F85320 /* CCBaseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseListViewController.m; sourceTree = "<group>"; };
-		D69A305722A7716700F85320 /* CCBaseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseListViewController.h; sourceTree = "<group>"; };
-		D69A305822A7716700F85320 /* CCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseViewController.h; sourceTree = "<group>"; };
-		D69A305922A7716700F85320 /* CCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseViewController.m; sourceTree = "<group>"; };
+		D69A305622A7716500F85320 /* CCMassiveListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMassiveListViewController.m; sourceTree = "<group>"; };
+		D69A305722A7716700F85320 /* CCMassiveListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMassiveListViewController.h; sourceTree = "<group>"; };
+		D69A305822A7716700F85320 /* CCMassiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMassiveViewController.h; sourceTree = "<group>"; };
+		D69A305922A7716700F85320 /* CCMassiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMassiveViewController.m; sourceTree = "<group>"; };
 		DD7CBF44CFA961A9573A3A33 /* libPods-CCMassiveAppKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CCMassiveAppKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB60E2A1DBBA132BB4B7E7C8 /* Pods-CCMassiveAppKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCMassiveAppKit.release.xcconfig"; path = "Target Support Files/Pods-CCMassiveAppKit/Pods-CCMassiveAppKit.release.xcconfig"; sourceTree = "<group>"; };
 		FD63E9F7A088774702135671 /* libPods-CCMassiveAppKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CCMassiveAppKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +155,73 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D65D9BD622A8BC3F0033C19B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D65D9BD722A8BC8A0033C19B /* CCSimpleRequest.h */,
+				D65D9BD822A8BC8A0033C19B /* CCSimpleRequest.m */,
+				D69A304922A763C400F85320 /* CCAFNetworkingService.h */,
+				D69A304D22A763C400F85320 /* CCAFNetworkingService.m */,
+				D65D9BDD22A8F7510033C19B /* CCRequestDefaultHandler.h */,
+				D65D9BDC22A8F7510033C19B /* CCRequestDefaultHandler.m */,
+				D65D9BE022A8F9CE0033C19B /* CCPagingRequestDefaultHandler.h */,
+				D65D9BE122A8F9CE0033C19B /* CCPagingRequestDefaultHandler.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D65D9BDA22A8E7340033C19B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D65D9BE322A901CD0033C19B /* CCJSONModelService.h */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D65D9BDF22A8F88D0033C19B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D69A305822A7716700F85320 /* CCMassiveViewController.h */,
+				D69A305922A7716700F85320 /* CCMassiveViewController.m */,
+				D69A305722A7716700F85320 /* CCMassiveListViewController.h */,
+				D69A305622A7716500F85320 /* CCMassiveListViewController.m */,
+				D69A304A22A763C400F85320 /* CCMassivePagingViewController.h */,
+				D69A304E22A763C400F85320 /* CCMassivePagingViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D65D9BE622A9078B0033C19B /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				D65D9BF422A90F800033C19B /* Controllers */,
+				D65D9BE722A907950033C19B /* RequestHandler */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		D65D9BE722A907950033C19B /* RequestHandler */ = {
+			isa = PBXGroup;
+			children = (
+				D65D9BEB22A907FE0033C19B /* CCProjectBaseRequestHandler.h */,
+				D65D9BEC22A907FE0033C19B /* CCProjectBaseRequestHandler.m */,
+				D65D9BEE22A908380033C19B /* CCTeamARequestHandler.h */,
+				D65D9BEF22A908380033C19B /* CCTeamARequestHandler.m */,
+				D65D9BF122A908460033C19B /* CCTeamBRequestHandler.h */,
+				D65D9BF222A908460033C19B /* CCTeamBRequestHandler.m */,
+			);
+			path = RequestHandler;
+			sourceTree = "<group>";
+		};
+		D65D9BF422A90F800033C19B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D65D9BF522A90F9E0033C19B /* CCAPagingViewController.h */,
+				D65D9BF622A90F9E0033C19B /* CCAPagingViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		D69A300A22A763A400F85320 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				D69A304822A763C400F85320 /* MassiveKit */,
+				D65D9BE622A9078B0033C19B /* Sample */,
 				D69A301622A763A400F85320 /* AppDelegate.h */,
 				D69A301722A763A400F85320 /* AppDelegate.m */,
 				D69A301922A763A400F85320 /* ViewController.h */,
@@ -193,16 +283,11 @@
 		D69A304822A763C400F85320 /* MassiveKit */ = {
 			isa = PBXGroup;
 			children = (
-				D69A305722A7716700F85320 /* CCBaseListViewController.h */,
-				D69A305622A7716500F85320 /* CCBaseListViewController.m */,
-				D69A305822A7716700F85320 /* CCBaseViewController.h */,
-				D69A305922A7716700F85320 /* CCBaseViewController.m */,
 				D69A304C22A763C400F85320 /* CCMassiveKitModule.h */,
 				D69A304F22A763C400F85320 /* CCMassiveKitModule.m */,
-				D69A304A22A763C400F85320 /* CCBasePagingViewController.h */,
-				D69A304E22A763C400F85320 /* CCBasePagingViewController.m */,
-				D69A304922A763C400F85320 /* CCAFNetworkingService.h */,
-				D69A304D22A763C400F85320 /* CCAFNetworkingService.m */,
+				D65D9BDF22A8F88D0033C19B /* Controllers */,
+				D65D9BDA22A8E7340033C19B /* Service */,
+				D65D9BD622A8BC3F0033C19B /* Network */,
 			);
 			path = MassiveKit;
 			sourceTree = "<group>";
@@ -432,12 +517,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D69A305122A763C400F85320 /* CCBasePagingViewController.m in Sources */,
-				D69A305B22A7716700F85320 /* CCBaseViewController.m in Sources */,
+				D69A305122A763C400F85320 /* CCMassivePagingViewController.m in Sources */,
+				D69A305B22A7716700F85320 /* CCMassiveViewController.m in Sources */,
 				D69A305222A763C400F85320 /* CCMassiveKitModule.m in Sources */,
 				D69A305022A763C400F85320 /* CCAFNetworkingService.m in Sources */,
+				D65D9BDE22A8F7510033C19B /* CCRequestDefaultHandler.m in Sources */,
+				D65D9BE222A8F9CE0033C19B /* CCPagingRequestDefaultHandler.m in Sources */,
+				D65D9BF322A908460033C19B /* CCTeamBRequestHandler.m in Sources */,
+				D65D9BF022A908380033C19B /* CCTeamARequestHandler.m in Sources */,
+				D65D9BED22A907FE0033C19B /* CCProjectBaseRequestHandler.m in Sources */,
+				D65D9BD922A8BC8A0033C19B /* CCSimpleRequest.m in Sources */,
+				D65D9BF722A90F9E0033C19B /* CCAPagingViewController.m in Sources */,
 				D69A301B22A763A400F85320 /* ViewController.m in Sources */,
-				D69A305A22A7716700F85320 /* CCBaseListViewController.m in Sources */,
+				D69A305A22A7716700F85320 /* CCMassiveListViewController.m in Sources */,
 				D69A302622A763A600F85320 /* main.m in Sources */,
 				D69A301822A763A400F85320 /* AppDelegate.m in Sources */,
 			);

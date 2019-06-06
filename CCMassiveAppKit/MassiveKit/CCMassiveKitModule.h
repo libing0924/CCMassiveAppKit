@@ -10,13 +10,6 @@
 
 @interface CCMassiveKitModule : NSObject
 
-// 需提供可配置下面handler的全局函数
-// CCResponseRawDataHandler
-// CCRequestDataHandler
-// CCPagingRawDataHandler
-+ (void)configNetworkGlobeHandler;
-
-// 配置Simple app kit的massive kit配置
-+ (void)configMassiveKit;
++ (void)configNetwork;
 
 @end

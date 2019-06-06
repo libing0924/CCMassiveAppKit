@@ -6,9 +6,9 @@
 //  Copyright © 2017年 李冰. All rights reserved.
 //
 
-#import "CCBaseViewController.h"
+#import "CCMassiveViewController.h"
 
-@interface CCBaseListViewController : CCBaseViewController<UITableViewDelegate, UITableViewDataSource>
+@interface CCMassiveListViewController : CCMassiveViewController<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 

@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CCSimpleAppKit/CCConvenientRequest.h>
+#import "CCSimpleRequest.h"
 
-@interface CCBaseViewController : UIViewController
+@interface CCMassiveViewController : UIViewController
 
 - (void)requestGET:(NSString *)urlStr parameters:(NSDictionary *)params response:(nullable void (^)(CCResponseMetaModel *metaModel))response;
 

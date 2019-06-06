@@ -6,20 +6,22 @@
 //  Copyright © 2019 CC. All rights reserved.
 //
 
-#import "CCBasePagingViewController.h"
+#import "CCMassivePagingViewController.h"
 #import <MJRefresh/MJRefresh.h>
 
-@interface CCBasePagingViewController ()
+@interface CCMassivePagingViewController ()
 
 @end
 
-@implementation CCBasePagingViewController
+@implementation CCMassivePagingViewController
 
 - (instancetype)init {
 
     if (self = [super init]) {
 
         _autoBeginRequest = YES;
+        _pagingRequest = [[CCPagingRequest alloc] init];
+        _pagingRequest.pagingHandler = self;
     }
 
     return self;
@@ -31,10 +33,7 @@
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(_headerRefresh)];
     self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(_requestData)];
 
-    _pagingRequest = [[CCPagingRequest alloc] init];
-    self.pagingRequest.pageingHandler = self;
-
-    if (_autoBeginRequest) {
+    if (_autoBeginRequest && _pagingRequest.urlStr) {
 
         [self.tableView.mj_header beginRefreshing];
     }
@@ -63,39 +62,43 @@
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return self.pagingRequest.dataSource.count;
+    return self.dataSource.count;
 }
 
 #pragma mark - CCPagingRawDataHandler
-
-- (NSDictionary *)parametersWithPagingRequest:(CCPagingRequest *)pagingRequest originalParameters:(NSDictionary *)originalParameters {
-
-    return [self requestParametersWithOriginalPatameters:originalParameters];
-}
-
-- (void)pagingRequestDidEnd:(CCPagingRequest *)pagingRequest metaData:(CCResponseMetaModel *)metaModel {
-
-    [self _stopAnimation];
-    if (metaModel.success) {
-
-        [self.tableView reloadData];
-    }
-}
-
 - (void)pagingRequestHasNoMoreData:(CCPagingRequest *)pagingRequest {
-
+    
     [self.tableView.mj_footer endRefreshingWithNoMoreData];
 }
 
-#pragma mark - Sub class implement
-- (Class)needRipeModel {
-
-    return nil;
+- (void)pagingRequestDidEnd:(CCPagingRequest *)pagingRequest metaData:(CCResponseMetaModel *)metaModel {
+    
+    [self _stopAnimation];
+    Class ripeModel = nil;
+    if ([self respondsToSelector:@selector(ripeModel)]) {
+        
+        ripeModel = [self ripeModel];
+    }
+    
+    if (ripeModel) {
+        
+         [self.dataSource addObjectsFromArray:[NSArray yy_modelArrayWithClass:ripeModel json:metaModel.contentData]];
+    } else {
+        
+        [self.dataSource addObjectsFromArray:metaModel.contentData];
+    }
+    
+    [self.tableView reloadData];
 }
 
-- (NSDictionary *)requestParametersWithOriginalPatameters:(NSDictionary *)originalPatameters {
+- (NSUInteger)pagingRequestTotalData:(CCPagingRequest *)pagingRequest metaData:(CCResponseMetaModel *)metaModel {
+    
+    return 0;
+}
 
-    return originalPatameters;
+- (NSDictionary *)parametersWithPagingRequest:(CCPagingRequest *)pagingRequest originalParameters:(NSDictionary *)originalParameters {
+    
+    return originalParameters;
 }
 
 @end

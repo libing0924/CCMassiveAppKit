@@ -1,1 +1,1 @@
-../../../CCSimpleAppKit/CCSimpleAppKit/SimpleKit/Network/CCPagingRequest.h
+../../../../../SimpleKit/Network/CCPagingRequest.h

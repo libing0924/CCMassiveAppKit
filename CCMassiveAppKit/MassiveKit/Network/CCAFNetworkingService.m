@@ -67,8 +67,22 @@
     }];
 }
 
-- (void)uploadImageWithOperations:(NSDictionary *)operations ImageArray:(NSArray *)imageArray UrlString:(NSString *)urlString progress:(cc_net_progress_block)progress success:(cc_net_success_block)success failure:(cc_net_failure_block)failure {
+- (void)uploadImageWithOperations:(NSDictionary *)operations image:(UIImage *)image urlString:(NSString *)urlString progress:(cc_net_progress_block)progress success:(cc_net_success_block)success failure:(cc_net_failure_block)failure {
     
+    [self.httpManager POST:urlString parameters:operations constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        
+        NSData *data = UIImageJPEGRepresentation(image, 1.0);
+        [formData appendPartWithFileData:data name:@"file" fileName:@"image.png" mimeType:@"image/jpeg"];
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+        if (progress) progress(uploadProgress.completedUnitCount/uploadProgress.totalUnitCount);
+    } success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *  _Nullable responseObject) {
+        
+        success(task, responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        failure(task, error);
+    }];
 }
 
 - (void)configBaseUrlString:(NSString *)urlString {

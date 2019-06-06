@@ -4,9 +4,10 @@ platform :ios, '9.0'
 target 'CCMassiveAppKit' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
-pod 'CCSimpleAppKit','~> 1.0.0'
+pod 'CCSimpleAppKit',:path => '../SimpleKit/'
 pod 'AFNetworking'
 pod 'MJRefresh'
+pod 'YYModel'
   # Pods for CCMassiveAppKit
 
   target 'CCMassiveAppKitTests' do

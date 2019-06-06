@@ -6,31 +6,30 @@
 //  Copyright © 2019 ALLEYOOP. All rights reserved.
 //
 
-#import "CCBaseViewController.h"
+#import "CCMassiveViewController.h"
 
-@interface CCBaseViewController ()
+@interface CCMassiveViewController ()
 
-@property (nonatomic, strong) CCConvenientRequest *convenientRequest;
+@property (nonatomic, strong) CCSimpleRequest *request;
 
 @end
 
-@implementation CCBaseViewController
+@implementation CCMassiveViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self localizedLanguageDidChanged];
     
-    
 }
 
 - (void)requestGET:(NSString *)urlStr parameters:(NSDictionary *)params response:(nullable void (^)(CCResponseMetaModel *metaModel))response {
     
-    [_convenientRequest requestGET:urlStr parameters:params response:response];
+    [_request requestGET:urlStr parameters:params response:response];
 }
 
 - (void)requestPOST:(NSString *)urlStr parameters:(NSDictionary *)params response:(nullable void (^)(CCResponseMetaModel *metaModel))response {
     
-    [_convenientRequest requestPOST:urlStr parameters:params response:response];
+    [_request requestPOST:urlStr parameters:params response:response];
 }
 
 - (void)dealloc {

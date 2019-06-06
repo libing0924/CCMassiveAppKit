@@ -6,13 +6,13 @@
 //  Copyright © 2017年 李冰. All rights reserved.
 //
 
-#import "CCBaseListViewController.h"
+#import "CCMassiveListViewController.h"
 
-@interface CCBaseListViewController ()
+@interface CCMassiveListViewController ()
 
 @end
 
-@implementation CCBaseListViewController
+@implementation CCMassiveListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

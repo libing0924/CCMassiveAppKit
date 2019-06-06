@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "62E4EEC7CD679EF413757B715B807F3F"
+               BlueprintIdentifier = "47E9EA373364C7ECBDF79D584E69961D"
                BuildableName = "libCCSimpleAppKit.a"
                BlueprintName = "CCSimpleAppKit"
                ReferencedContainer = "container:Pods.xcodeproj">

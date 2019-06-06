@@ -1,1 +1,1 @@
-../../../CCSimpleAppKit/CCSimpleAppKit/SimpleKit/CCNetworkService.h
+../../../../../SimpleKit/CCNetworkService.h

@@ -10,20 +10,21 @@
 
 // 基于AFNetworking框架的网络服务
 #import "CCAFNetworkingService.h"
+// request代理
+#import "CCRequestDefaultHandler.h"
+// paging request代理
+#import "CCPagingRequestDefaultHandler.h"
 
 // SimpleAppKit
-#import "CCNetworkRequestFactory.h"
+#import <CCSimpleAppKit/CCNetworkFactory.h>
 
 @implementation CCMassiveKitModule
 
-// 自动加载配置
-+ (void)load {
++ (void)configNetwork {
     
-    [CCNetworkRequestFactory registerGlobeRequestService:[CCAFNetworkingService sharedInstance]];
-}
-
-+ (void)configNetworkGlobeHandler {
-    
+    [CCNetworkFactory registerGlobeRequestService:CCAFNetworkingService.class];
+    [CCNetworkFactory registerGlobeRequestHandler:CCRequestDefaultHandler.class];
+    [CCNetworkFactory registerGlobePagingRequestHandler:CCPagingRequestDefaultHandler.class];
 }
 
 + (void)configMassiveKit {

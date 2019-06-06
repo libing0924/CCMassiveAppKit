@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "CCMassiveKitModule.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +18,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // 配置网络（注册网络服务、注册请求全局代理、注册分页全局代理）
+    [CCMassiveKitModule configNetwork];
+    
     return YES;
 }
 
