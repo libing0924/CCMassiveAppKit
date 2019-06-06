@@ -10,20 +10,5 @@
 
 @implementation CCSimpleRequest
 
-- (void)requestGET:(NSString *)urlStr parameters:(NSDictionary *)params bindModel:(Class)modelClass response:(void (^)(CCResponseMetaModel *))response {
-    
-    [super requestGET:urlStr parameters:params response:^(CCResponseMetaModel *metaModel) {
-        
-        
-    }];
-}
-
-- (void)requestPOST:(NSString *)urlStr parameters:(NSDictionary *)params bindModel:(Class)modelClass response:(void (^)(CCResponseMetaModel *))response {
-    
-    [super requestPOST:urlStr parameters:params response:^(CCResponseMetaModel *metaModel) {
-        
-        
-    }];
-}
 
 @end

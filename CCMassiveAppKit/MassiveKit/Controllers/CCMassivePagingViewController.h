@@ -6,10 +6,9 @@
 //  Copyright © 2019 CC. All rights reserved.
 //
 
-// 耦合分页请求(CCPagingRequest)、分页控件（MJRefresh）、json服务(YYModel)
+// 耦合分页请求(CCPagingRequest)、分页控件（MJRefresh）
 #import "CCMassiveListViewController.h"
 #import <CCSimpleAppKit/CCPagingRequest.h>
-#import <YYModel.h>
 
 @interface CCMassivePagingViewController : CCMassiveListViewController <CCPagingRequestHandler>
 

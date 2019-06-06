@@ -74,19 +74,21 @@
 - (void)pagingRequestDidEnd:(CCPagingRequest *)pagingRequest metaData:(CCResponseMetaModel *)metaModel {
     
     [self _stopAnimation];
-    Class ripeModel = nil;
-    if ([self respondsToSelector:@selector(ripeModel)]) {
-        
-        ripeModel = [self ripeModel];
-    }
+//    Class ripeModel = nil;
+//    if ([self respondsToSelector:@selector(ripeModel)]) {
+//
+//        ripeModel = [self ripeModel];
+//    }
+//    
+//    if (ripeModel) {
+//
+//         [self.dataSource addObjectsFromArray:[NSArray yy_modelArrayWithClass:ripeModel json:metaModel.contentData]];
+//    } else {
+//
+//        [self.dataSource addObjectsFromArray:metaModel.contentData];
+//    }
     
-    if (ripeModel) {
-        
-         [self.dataSource addObjectsFromArray:[NSArray yy_modelArrayWithClass:ripeModel json:metaModel.contentData]];
-    } else {
-        
-        [self.dataSource addObjectsFromArray:metaModel.contentData];
-    }
+    [self.dataSource addObjectsFromArray:metaModel.contentData];
     
     [self.tableView reloadData];
 }

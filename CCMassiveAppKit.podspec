@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CCMassiveAppKit"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "CCMassiveAppKit promote develop efficient.This kit dependency common dependency library AFNetworking, MJRefresh"
 
   s.description  = <<-DESC
@@ -17,10 +17,11 @@ TODO: Add long description of the pod here.CCMassiveAppKit promote develop effic
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'CCMassiveAppKit/MassiveKit/*.{h,m}'
+  s.source_files = 'CCMassiveAppKit/**/*.{h,m}'
   s.dependency 'AFNetworking'
   s.dependency 'MJRefresh'
-  s.dependency 'CCSimpleAppKit', '~>1.0.0'
+  s.dependency 'YYModel'
+  s.dependency 'CCSimpleAppKit', '~>1.0.1'
     
 
 end
